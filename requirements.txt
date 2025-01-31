@@ -1,0 +1,8 @@
+uvicorn 
+fastapi
+passlib
+pymongo
+jwt
+pydantic
+motor
+requests

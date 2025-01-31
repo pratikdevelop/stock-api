@@ -100,7 +100,6 @@ async function getCompanyEarnings(keyword) {
 }
 
 async function getChartData(keyword, start_date, end_date, multiplier, timespan) {
-    console.log("rrrr", `https://api.polygon.io/v2/aggs/ticker/${keyword}/range/${multiplier}/${timespan}/${start_date}/${end_date}?adjusted=true&sort=asc&apiKey=${POLYGON_API_KEY}`);
     const data = await fetchData(`https://api.polygon.io/v2/aggs/ticker/${keyword}/range/${multiplier}/${timespan}/${start_date}/${end_date}?adjusted=true&sort=asc&apiKey=${POLYGON_API_KEY}`);
     return data;
 }
